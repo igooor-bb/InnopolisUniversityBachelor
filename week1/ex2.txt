@@ -1,0 +1,10 @@
+  155  touch file.txt
+  156  echo "Some text" > file.txt
+  157  cat file.txt
+  158  rm file.txt
+  159  mkdir tmp
+  160  cd tmp
+  161  cd ..
+  162  rm -rf tmp
+  163  ls
+  164  history | tall > ex2.txt
