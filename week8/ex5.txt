@@ -1,0 +1,2 @@
+Virtual address is generated for a process and doesn't really exist, while physical address is related to hardware piece of memory.
+There are mapping from virtual address to physical one.

@@ -1,0 +1,5 @@
+A machine has 16-bit virtual addresses.
+Page size is 8 KB.
+For 8 KB = 8192 bytes we need 13 bit for addressing (offset).
+Therefore, 16 - 13 = 3 defines one of the 8 (2^3) pages.
+Result: 8 pages
