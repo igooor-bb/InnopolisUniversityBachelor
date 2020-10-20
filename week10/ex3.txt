@@ -1,0 +1,20 @@
+Output of [ls -l _ex3.txt] after step #3
+-rwxr--rwx  1 igooor_bb  staff  0 Oct 20 13:05 _ex3.txt
+
+Output of [ls -l _ex3.txt] after step #4
+-rwxrwxrwx  1 igooor_bb  staff  0 Oct 20 13:05 _ex3.txt
+
+660 mdoe means:
+  - User can read, write
+  - Group can read, write
+  - Others have no permissions
+
+775 mode means:
+  - User can read, write, execute
+  - Group can read, write, execute
+  - Others can read, execute
+
+777 mdoe means:
+  - User can read, write, execute
+  - Group can read, write, execute
+  - Others can read, write, execute

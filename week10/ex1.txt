@@ -1,0 +1,11 @@
+total 136
+8648254 -rw-r--r--  3 igooor_bb  staff      0 Oct 20 12:56 _ex1.txt
+8648254 -rw-r--r--  3 igooor_bb  staff      0 Oct 20 12:56 _ex1_1.txt
+8648254 -rw-r--r--  3 igooor_bb  staff      0 Oct 20 12:56 _ex1_2.txt
+8655623 -rw-r--r--  1 igooor_bb  staff      0 Oct 20 14:49 ex1.txt
+8648854 -rw-r--r--  1 igooor_bb  staff     37 Oct 20 13:03 ex2.txt
+8649290 -rw-r--r--  1 igooor_bb  staff    531 Oct 20 13:20 ex3.txt
+8655121 -rwxr-xr-x  1 igooor_bb  staff  50248 Oct 20 14:42 ex4
+8650861 -rw-r--r--  1 igooor_bb  staff   1702 Oct 20 14:42 ex4.c
+8655532 -rw-r--r--  1 igooor_bb  staff     50 Oct 20 14:46 ex4.txt
+8649614 drwxr-xr-x  7 igooor_bb  staff    224 Oct 20 14:41 tmp
