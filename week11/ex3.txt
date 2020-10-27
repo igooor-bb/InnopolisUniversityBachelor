@@ -1,0 +1,8 @@
+In the first case:
+The program stuffs "Hello" into the buffer and then forks.
+Since both processes have the same buffer with "Hello" inside, the second printf() fills the 
+buffer by a newline and each process prints buffer content that is "Hello\n".
+
+In the second case:
+The program stuffs "Hello\n" into the buffer and prints it since a newline is met and then forks.
+Since the buffer is empty, each process prints newline at the second printf().
