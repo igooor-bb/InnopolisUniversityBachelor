@@ -1,0 +1,127 @@
+### Without O_SYNC ###
+
+Buffer size: 64
+
+real    0m0.401s
+user    0m0.005s
+sys     0m0.023s
+
+Buffer size: 128
+
+real    0m0.474s
+user    0m0.004s
+sys     0m0.016s
+
+Buffer size: 256
+
+real    0m0.207s
+user    0m0.004s
+sys     0m0.013s
+
+Buffer size: 512
+
+real    0m0.072s
+user    0m0.002s
+sys     0m0.007s
+
+Buffer size: 1024
+
+real    0m0.073s
+user    0m0.002s
+sys     0m0.006s
+
+Buffer size: 2048
+
+real    0m0.184s
+user    0m0.001s
+sys     0m0.003s
+
+Buffer size: 4096
+
+real    0m0.699s
+user    0m0.002s
+sys     0m0.004s
+
+Buffer size: 8192
+
+real    0m0.192s
+user    0m0.001s
+sys     0m0.003s
+
+Buffer size: 16384
+
+real    0m0.196s
+user    0m0.002s
+sys     0m0.004s
+
+Buffer size: 32768
+
+real    0m0.198s
+user    0m0.002s
+sys     0m0.003s
+
+### With O_SYNC ###
+
+Buffer size: 64
+
+real    0m0.621s
+user    0m0.006s
+sys     0m0.124s
+
+Buffer size: 128
+
+real    0m0.351s
+user    0m0.004s
+sys     0m0.077s
+
+Buffer size: 256
+
+real    0m0.861s
+user    0m0.002s
+sys     0m0.033s
+
+Buffer size: 512
+
+real    0m0.529s
+user    0m0.003s
+sys     0m0.028s
+
+Buffer size: 1024
+
+real    0m0.227s
+user    0m0.002s
+sys     0m0.019s
+
+Buffer size: 2048
+
+real    0m0.490s
+user    0m0.002s
+sys     0m0.011s
+
+Buffer size: 4096
+
+real    0m0.219s
+user    0m0.002s
+sys     0m0.016s
+
+Buffer size: 8192
+
+real    0m0.553s
+user    0m0.002s
+sys     0m0.013s
+
+Buffer size: 16384
+
+real    0m0.203s
+user    0m0.002s
+sys     0m0.006s
+
+Buffer size: 32768
+
+real    0m0.195s
+user    0m0.001s
+sys     0m0.003s
+
+Execution with O_SYINC is slower, beacuse when you open using O_SYNC, the data must go all the way to disk on 
+every write call. When you don't use O_SYNC, then the kernel is able to combine writes in the cache. 
+Therefore, you end up with fewer accesses to the physical disk, which makes execution much faster. 
