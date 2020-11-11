@@ -1,0 +1,20 @@
+## Avoidance
+    Pros
+        - No roll-back of the process required
+    Cons
+        - Safe state checking overhead
+        - Future resource requirements must be known
+        - Processes can be blocked for long periods
+
+## Prevention
+    Pros:
+        - Suitable where roll-back is impossible or expensive
+    Cons:
+        - Inefficient due to preemtion or low resource utilization
+        
+## Recovery 
+    Pros:
+        - Maximum concurrency and resource utilization
+    Cons:
+        - Roll-back
+        - Cycle checking overhead even if it is not deadlocked
